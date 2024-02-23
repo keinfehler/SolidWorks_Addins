@@ -1,0 +1,43 @@
+Windows Registry Editor Version 5.00
+
+;Remove previous registration
+[-HKEY_LOCAL_MACHINE\Software\Classes\CLSID\{69edfb1f-3f3d-4b51-927e-1ccecd43dd91}]
+[-HKEY_LOCAL_MACHINE\Software\SolidWorks\AddIns\{69edfb1f-3f3d-4b51-927e-1ccecd43dd91}]
+
+; New Registration
+[HKEY_LOCAL_MACHINE\Software\Classes\CLSID\{69edfb1f-3f3d-4b51-927e-1ccecd43dd91}]
+@="SolidDna.CustomCommands"
+"AutoConnect"=dword:00000001
+"409"="Solid Works Addin SolidDna.CustomCommands"
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{69edfb1f-3f3d-4b51-927e-1ccecd43dd91}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}]
+
+
+[HKEY_LOCAL_MACHINE\Software\Classes\CLSID\{69edfb1f-3f3d-4b51-927e-1ccecd43dd91}\InprocServer32]
+@="mscoree.dll"
+"Assembly"="SolidDna.CustomCommands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+"ThreadingModel"="Both"
+"Class"="SolidDna.CustomCommands.SolidDnaAddinIntegration"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///F:/WorkingSolidWorks/SolidWorks_Addin/Addins/SolidDna.CustomCommands/bin/Debug/SolidDna.CustomCommands.DLL"
+
+[HKEY_LOCAL_MACHINE\Software\Classes\CLSID\{69edfb1f-3f3d-4b51-927e-1ccecd43dd91}\InprocServer32\1.0.0.0]
+"Class"="SolidDna.CustomCommands.SolidDnaAddinIntegration"
+"Assembly"="SolidDna.CustomCommands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///F:/WorkingSolidWorks/SolidWorks_Addin/Addins/SolidDna.CustomCommands/bin/Debug/SolidDna.CustomCommands.DLL"
+
+
+
+[HKEY_LOCAL_MACHINE\Software\Classes\CLSID\{69edfb1f-3f3d-4b51-927e-1ccecd43dd91}\ProgId]
+@="SolidDna.CustomCommands.SolidDnaAddinIntegration"
+
+[HKEY_LOCAL_MACHINE\Software\Classes\CLSID\{69edfb1f-3f3d-4b51-927e-1ccecd43dd91}\Summary]
+"409"="Solid Works Addin in .NET 4.0."
+
+[HKEY_LOCAL_MACHINE\Software\SolidWorks\AddIns\{69edfb1f-3f3d-4b51-927e-1ccecd43dd91}]
+@=dword:00000001
+"Description"="An example of Command Items and exporting by RE"
+"Title"="SolidDNA Custom Commands by RE"
+

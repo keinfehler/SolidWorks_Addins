@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+;Remove previous registration
+[-HKEY_LOCAL_MACHINE\Software\Classes\CLSID\{69edfb1f-3f3d-4b51-927e-1ccecd43dd91}]
+[-HKEY_LOCAL_MACHINE\Software\SolidWorks\AddIns\{69edfb1f-3f3d-4b51-927e-1ccecd43dd91}]
+
+
